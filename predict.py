@@ -14,7 +14,7 @@ from sklearn import datasets, metrics
 clf, features, classlist, slr, k, iterations = joblib.load("bof.pkl")
 
 sift = cv2.xfeatures2d.SIFT_create()
-testpath = glob.glob('/home/periperi/school/rcv/project4/test/*.png')
+testpath = glob.glob('/this/is/your/path/to/test/*.png')
 
 #plot clusters
 fig = plt.figure()
@@ -30,7 +30,7 @@ for i in iterations:
 plt.show()
 
 imagepaths=[]
-classespath = "/home/periperi/school/rcv/project4/test/"
+classespath = "/this/is/your/path/to/test/"
 deslist =[]
 imageclasses=[]
 paths=[]
