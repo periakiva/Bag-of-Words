@@ -18,8 +18,8 @@ from sklearn import linear_model
 
 #set parameters
 sift = cv2.xfeatures2d.SIFT_create()
-trainpath = "/home/periperi/school/rcv/project4/train/"
-test = glob.glob('/home/periperi/school/rcv/test/*.png')
+trainpath = "/this/is/your/path/to/train/"
+test = glob.glob('/this/is/your/path/to/test/*.png')
 classeslist = os.listdir(trainpath)
 
 desvector=[]
