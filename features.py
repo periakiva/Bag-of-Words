@@ -91,6 +91,8 @@ joblib.dump((clf,features,classeslist,slr,k,iterations),"bof.pkl",compress=3)
 #cmap_bold = ListedColormap(['#FF0000','#00FF00','#0000FF'])
 #for weights in ['uniform','distance']:
 #clf.fit(features,np.array(imageclasses))
+
+#this part is to visualize the calssification. Fell free to use
 """
 markers =('s','x','o','^','v')
 colors = ('red','blue','lightgreen','gray','cyan')
