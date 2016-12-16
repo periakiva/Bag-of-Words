@@ -25,13 +25,14 @@ k=25
 iterations, variance = kmeans(deslist1, k,1)
 
 #some debugging and validation steps
-print deslist.shape
-print len(iterations)
-print iterations.shape
-print deslist1.shape
-print len(imageclasses)
+#print deslist.shape
+#print len(iterations)
+#print iterations.shape
+#print deslist1.shape
+#print len(imageclasses)
 
 #label images for comparison later on
+#those are the histograms for each image to create bag of visual words
 features = np.zeros((len(imageclasses),k),'float32')
 for i in xrange(len(imageclasses)):
 	words, distance = vq(deslist[i],iterations)
@@ -43,16 +44,16 @@ for i in xrange(len(imageclasses)):
 		features[i][w] += 1
 #		print w
 
-
-print "features shape"
-print features.shape
-print "deslist1 shape"
-print deslist1.shape
-print "deslist shape"
-print deslist.shape
-print len(deslist)
-print "image classes size"
-print len(imageclasses)
+#Those printing statement are for debugging purpuses, in case any of you need to.
+#print "features shape"
+#print features.shape
+#print "deslist1 shape"
+#print deslist1.shape
+#print "deslist shape"
+#print deslist.shape
+#print len(deslist)
+#print "image classes size"
+#print len(imageclasses)
 
 #transform vector
 oc = np.sum((features>0)*1,axis=0)
