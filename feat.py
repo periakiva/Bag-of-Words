@@ -40,19 +40,20 @@ for train in classeslist:
 	classlabels.append(classid)
 	classid+=1
 
-print "imageclasses"
-print imageclasses
-print "classlabels"
-print classlabels
-print "classpaths"
-print classpaths
+#Those printing statements are for debugging purpuses, in case you need to.
+#print "imageclasses"
+#print imageclasses
+#print "classlabels"
+#print classlabels
+#print "classpaths"
+#print classpaths
 deslist1=np.zeros(shape =(128,1))
-print "deslist1 shape"
-print deslist1.shape
-print "y shape"
-print np.array([classlabels,1]).shape
+#print "deslist1 shape"
+#print deslist1.shape
+#print "y shape"
+#print np.array([classlabels,1]).shape
 imc = imageclasses
-print imageclasses[2400]
+#print imageclasses[2400]
 
 imageclasses = np.asarray(imageclasses)
 classis=0
