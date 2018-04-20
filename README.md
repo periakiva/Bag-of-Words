@@ -15,6 +15,7 @@ mpl_toolkits
 ## Run with already loaded set:
 ```
 $ git clone git@github.com:periakiva/Bag-of-Words.git
+$ cd Bag-of-Words
 $ python predict.py
 ```
 
