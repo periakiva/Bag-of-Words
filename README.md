@@ -1,11 +1,33 @@
 # Bag-of-Words
 
-If you would like to try with an already made set, run predict with the file bof.pkl and test folder in the current directory. It will test the images with pretrained data. 
+## Requirements:
+```
+OpenCV 2.4 (I believe)
+Numpy
+glob
+os
+Matplotlib
+Sklearn
+scipy
+mpl_toolkits
+```
 
-If you would like to train your own data, set a new path to your training images. 
+## Run with already loaded set:
+```
+$ git clone git@github.com:periakiva/Bag-of-Words.git
+$ python predict.py
+```
 
-first run feat.py to acquire descriptors vector
-
-then run features.py to obtain clusters and classifier
-
-lastly run predict.py to classify test images
+## Run with your own data:
+```
+$ git clone git@github.com:periakiva/Bag-of-Words.git
+$ cd Bag-of-Words
+$ mkdir train_my_own
+$ cd train_my_own
+```
+At this point make a folder for each class and insert images + change path in code to your new training folder **/train_my_own/**
+```
+$ python feat.py
+$ python features.py
+$ python predict.py
+```
